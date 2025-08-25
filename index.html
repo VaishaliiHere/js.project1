@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+
+<body>
+    <h2>STONE,PAPERS & SCISSORS !!</h2>
+    <div class="result-outer allflex" id="outer">
+        <div id="result" class="allflex result-outer"></div>
+        <div class="score" >Your Score: <span id="score" >0</span></div>
+        <div class="score">Comp's Score: <span id="comp-score">0</span> </div>
+
+    </div>
+
+    <div class="container">
+        <div class="playground allflex">
+            <h3 id="intro" class="heading3">Select an option and start the Game!</h3>
+
+            <!-- <h6 id="diff-choices" class="diff-choices">< span>Your Choice</span><span>Computer's Choice</span></h6> -->
+            <div id="selected"></div>
+            <div id="comp-selected"></div>
+        </div>
+        <div class="options allflex">
+            <div class="inner"><span class="one select allflex" id=stone>✊</span>
+                <h4>STONE</h4>
+            </div>
+            <div class="inner"><span class="two select allflex" id="paper">🤚</span>
+                <h4>PAPER</h4>
+            </div>
+            <div class="inner"> <span class="three select allflex" id="scissor">✌️</span>
+                <h4>SCISSOR</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="reset allflex" id="button" onclick="initial()"> <button>RESET</button> </div>
+    <script src="sps.js"></script>
+</body>
+
+</html>
